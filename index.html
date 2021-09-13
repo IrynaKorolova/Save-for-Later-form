@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preload" href="./css/style.css" as="style" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>LocalStorage</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name..."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name..."
+        />
+
+        <label for="dob">Date Of Birth</label>
+        <input type="text" name="dob" id="dob" placeholder="dd/mm/yyyy" />
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" />
+
+        <label for="mphone">Mobile phone</label>
+        <input
+          type="text"
+          id="mphone"
+          name="phone"
+          placeholder="Your mobile phone..."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Ukraine</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something..."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
