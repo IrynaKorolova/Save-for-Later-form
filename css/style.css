@@ -10,14 +10,15 @@ textarea {
   padding: 13px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  box-sizing: border-box;
   margin: 16px 0 16px;
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
 }
 input[type="submit"] {
   background-color: #04aa6d;
+  font-size: 16px;
   color: white;
-  padding: 12px 20px;
+  padding: 15px 25px;
   border: none;
   border-radius: 4px;
   cursor: pointer;

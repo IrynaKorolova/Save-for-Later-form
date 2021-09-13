@@ -1,8 +1,6 @@
-//const submitButton = document.querySelector("input");
-//console.log(submitButton);
-let form = document.querySelector("#form");
-let formId = Date.now;
-let formElements = form.elements;
+const formId = document.getElementById("form");
+const formElements = formId.elements;
+const submitBtn = document.getElementById("submit");
 
 const getFormData = () => {
   let data = { [formId]: {} }; // create an empty object with the formIdentifier as the key and an empty object as its value
@@ -14,7 +12,7 @@ const getFormData = () => {
   return data;
 };
 
-window.oninput = (event) => {
+submitBtn.onclick = (event) => {
   event.preventDefault();
   data = getFormData();
   localStorage.setItem(formId, JSON.stringify(data[formId]));
