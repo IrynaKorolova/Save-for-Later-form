@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preload" href="./css/style.css" as="style" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>LocalStorage</title>
   </head>
+
   <body>
     <div class="container">
       <form id="form">
@@ -41,22 +41,23 @@
           placeholder="Your mobile phone..."
         />
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Ukraine</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+        <label>
+          Country
+          <select name="country">
+            <option value="ukraine">Ukraine</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </label>
 
         <label for="subject">Subject</label>
         <textarea
           id="subject"
           name="subject"
           placeholder="Write something..."
-          style="height: 200px"
         ></textarea>
 
-        <input type="submit" value="Submit" id="submit" />
+        <button type="submit">Send</button>
       </form>
     </div>
     <script src="./js/app.js"></script>
